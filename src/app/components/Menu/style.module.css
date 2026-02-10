@@ -1,0 +1,17 @@
+.button{
+    padding: 0.4rem 2rem;
+    border: 1px solid var(--color-neutral-900);
+    background-color: var(--color-neutral-200);
+    color: var(--color-stone-950);
+    border-radius: 7px;
+    height: 70%;
+    box-shadow: -3px 3px 0px black;
+}
+.button:active{
+    filter: brightness(0.8);
+    box-shadow: inset -3px 3px 1px black;
+}
+#Projetos{
+    background-color: var(--color-blue-700);
+    color: var(--color-neutral-200);
+}
