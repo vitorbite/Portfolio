@@ -6,7 +6,9 @@ export default function index() {
       <div className="flex justify-between max-w-1/2 w-2xl min-w-100 h-15 items-center">
         <button className={styles.button}>Home</button>
         <button className={styles.button}>Sobre Mim</button>
-        <button className={styles.button} id={styles.Projetos}>Projetos</button>
+        <button className={styles.button} id={styles.Projetos}>
+          Projetos
+        </button>
       </div>
     </div>
   );

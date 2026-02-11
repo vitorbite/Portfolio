@@ -1,0 +1,17 @@
+.container {
+  background-color: var(--color-blue-950);
+  width: 65vw;
+  padding: 3rem;
+  border: 2px solid var(--color-neutral-200);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+@media (max-width: 600px) {
+  .container {
+    width: 90vw;
+  }
+}
