@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen w-screen items-center justify-center font-sans overflow-x-hidden bg-primary-blue">
       <Menu />
-      <main className="flex min-h-screen max-w-11/12 min-w-5xl flex-col items-center justify-between py-16 px-16 bg-white dark:bg-black">
+      <main className="flex min-h-screen max-w-11/12 min-w-5xl flex-col items-center justify-between py-16 px-16 bg-tertiary-blue">
         <Container>
           <div className="flex flex-col">
             <span className="max-w-xs text-xl">Oi, me chamo</span>

@@ -5,6 +5,7 @@
   --foreground: #171717;
   --primary-blue: #2776f5;
   --secondary-blue: #0f2a55;
+  --tertiary-blue: #001435;
 }
 
 @theme inline {
@@ -29,4 +30,7 @@ body {
 
 .bg-primary-blue{
   background: linear-gradient(to bottom, var(--primary-blue), var(--secondary-blue));
+}
+.bg-tertiary-blue{
+  background: var(--tertiary-blue);
 }
