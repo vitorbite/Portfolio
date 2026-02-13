@@ -7,6 +7,11 @@
     border-radius: 7px;
     height: 70%;
     box-shadow: -3px 3px 0px black;
+    transition: all 0.2s;
+}
+.button:hover{
+    background-color: var(--color-neutral-900);
+    color: var(--color-neutral-200);
 }
 .button:active{
     filter: brightness(0.8);
@@ -14,5 +19,9 @@
 }
 #Projetos{
     background-color: var(--color-blue-700);
+    color: var(--color-neutral-200);
+}
+#Projetos:hover{
+    background-color: var(--color-blue-800);
     color: var(--color-neutral-200);
 }
