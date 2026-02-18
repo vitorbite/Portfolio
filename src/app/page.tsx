@@ -1,16 +1,19 @@
-// import Image from "next/image";
+import Particles from "./components/Particles";
 import Container from "./components/Container";
 import Menu from "./components/Menu";
 import Hero from "./components/Hero";
 import Card from "./components/Card";
 import Footer from "./components/Footer";
 import Img from "./imgs/Foto1.png";
+import GatoImg from "./imgs/GatoChad.png";
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen w-screen items-center justify-center font-sans overflow-x-hidden bg-primary-blue">
+    <Particles>
+    <div className="flex flex-col min-h-screen w-screen items-center justify-center font-sans overflow-x-hidden">
       <Menu />
-      <main className="flex min-h-screen max-w-11/12 min-w-5xl flex-col items-center justify-between py-16 px-16 bg-tertiary-blue rounded-b-3xl">
+      <main className="flex min-h-screen max-w-11/12 min-w-5xl flex-col items-center justify-between py-16 px-16 bg-tertiary-blue rounded-b-3xl border-2 border-t-0 border-blue-950">
+
         <Container>
           <div className="flex flex-row justixfy-center">
             <div className="flex flex-col max-w-3xl sm:w-md justify-center">
@@ -31,7 +34,9 @@ export default function Home() {
         </Container>
         <Container>
           <div className="flex flex-row">
-            <img src="#" alt="#" />
+            <Card>
+              <img src={GatoImg.src} alt="#" className="w-80" />
+            </Card>
             <div className="mx-30 flex flex-col items-center gap-6 text-center border-l-2 border-amber-50 p-4">
               <h3 className="text-xl">Coisas que gosto de fazer</h3>
               <ul>
@@ -107,8 +112,7 @@ export default function Home() {
             </Card>
             <Card>
               Python (básico) Linguagem versátil, usada em automação, análise de
-              dados e inteligência artificial. Você tem noções iniciais e pode
-              expandir para projetos futuros.
+              dados e inteligência artificial.
             </Card>
           </div>
         </Container>
@@ -130,5 +134,6 @@ export default function Home() {
       </main>
       <Footer />
     </div>
+    </Particles>
   );
 }

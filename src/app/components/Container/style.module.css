@@ -1,5 +1,5 @@
 .container {
-  background-color: var(--color-blue-950);
+  background-color: rgba(22, 37, 86, 0.7l);
   width: 65vw;
   padding: 3rem;
   border: 2px solid var(--color-neutral-200);
