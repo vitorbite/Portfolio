@@ -12,6 +12,7 @@
 .button:hover{
     background-color: var(--color-neutral-900);
     color: var(--color-neutral-200);
+    transition: 0.3s;
 }
 .button:active{
     filter: brightness(0.8);

@@ -1,19 +1,16 @@
 "use client";
 
 import React from "react";
-import Particles from "../React-bits/components/Particles";
+import Particles from "../React-bits/Particles";
 
 export default function index({ children }: { children: React.ReactNode }) {
   return (
     <>
       <div className="fixed inset-0 -z-10  bg-primary-blue">
-        <div
-          className=""
-          style={{ width: "1080px", height: "1080px", position: "absolute" }}
-        >
+        <div className="w-full h-full">
           <Particles
-            particleCount={720}
-            particleSpread={17}
+            particleCount={1520}
+            particleSpread={48}
             speed={0.38}
             particleColors={["#ffffff", "#ffffff", "#ffffff"]}
             moveParticlesOnHover={false}
@@ -21,7 +18,7 @@ export default function index({ children }: { children: React.ReactNode }) {
             alphaParticles
             particleBaseSize={150}
             sizeRandomness={1.6}
-            cameraDistance={42}
+            cameraDistance={60}
             disableRotation={false}
           />
         </div>
