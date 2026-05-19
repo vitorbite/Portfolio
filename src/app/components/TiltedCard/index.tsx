@@ -22,15 +22,15 @@ export default function index({
   captionText = "",
   containerHeight = "150px",
   containerWidth = "100%",
-  imageHeight = "130px",
-  imageWidth = "130px",
+  imageHeight = '10vw',
+  imageWidth = '10vw',
   rotateAmplitude = 35,
   scaleOnHover = 1.10,
   showMobileWarning = false,
   showTooltip = true,
 }: TiltedCardWrapperProps) {
   return (
-    <div className="w-full bg-amber-100">
+    <div className="w-full">
       <TiltedCard
         imageSrc={imageSrc}
         altText={altText}

@@ -7,6 +7,7 @@ import Card from "./components/Card";
 import Footer from "./components/Footer";
 import Img from "./imgs/Foto1.png";
 import GatoImg from "./imgs/GatoChad.png";
+import ProjetosContainer from "./components/ProjetoContainer";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <div className="flex flex-col min-h-screen w-screen items-center justify-center font-sans overflow-x-hidden">
         <Menu />
         <main className="flex min-h-screen max-w-11/12 min-w-5xl flex-col items-center justify-between py-16 px-16 bg-tertiary-blue rounded-b-3xl border-2 border-t-0 border-blue-950">
+          {/* Inicio */}
           <Container>
             <div className="flex flex-row justixfy-center">
               <div className="flex flex-col max-w-3xl sm:w-md justify-center">
@@ -22,7 +24,7 @@ export default function Home() {
                   Vítor Bitencourt de Andrade
                 </h1>
                 <h2 className="max-w-md text-2xl leading-8 font-extrabold text-shadow-black text-shadow-md">
-                  {/* <Hero></Hero> */}
+                  <Hero></Hero>
                 </h2>
               </div>
               <img
@@ -32,12 +34,15 @@ export default function Home() {
               />
             </div>
           </Container>
+          {/* Sobre mim */}
           <Container>
-            <div className="flex flex-row">
+            <div className="flex flex-row" id="Sobre">
               <Card>
                 <img src={GatoImg.src} alt="#" className="w-80" />
               </Card>
-              <div className="mx-30 flex flex-col items-center gap-6 text-center border-l-2 border-amber-50 p-4">
+              <div className="mx-30 flex flex-col items-center gap-6 border-l-2 border-amber-50 p-4">
+                <h2>Sobre mim</h2>
+                <p className="p-4">Sou alguém que é apaixonado pela programação, gosto de estudar, criar novas soluções e interfaces de novos projetos. Estou cursando Engenharia de Software e ficando cada dia mais profissional na área da programação.Tenho vontade de estagiar como desenvolvedor.</p>
                 <h3 className="text-xl">Coisas que gosto de fazer</h3>
                 <ul>
                   <li>Programar</li>
@@ -47,8 +52,9 @@ export default function Home() {
               </div>
             </div>
           </Container>
+          {/* Tecnologias */}
           <Container>
-            <div className="flex flex-col gap-5 bg-red-500">
+            <div className="flex flex-col gap-5">
               <h1 className="text-2xl">🌐 Front-end</h1>
               <Card>
                 HTML & CSS Base sólida para estruturar e estilizar páginas web.
@@ -185,17 +191,15 @@ export default function Home() {
                 />
             </div>
           </Container>
-
+          {/* Projetos */}
           <Container>
             <h1 className="text-2xl bg-neutral-900 p-2">Projetos</h1>
-            <div className="flex content-around sm:flex-col">
-              {/* <TiltedCard />
-              <TiltedCard />
-              <TiltedCard /> */}
+            <div className="w-full">
+              <ProjetosContainer></ProjetosContainer>
             </div>
           </Container>
           <Container>
-            <h1>Entre em Contato</h1>
+            <h2>Entre em Contato</h2>
             <form action="send" method="POST" className="flex flex-col">
               <label htmlFor="nome">nome:</label>
               <input id="nome" type="text" className="bg-white" />
