@@ -47,13 +47,13 @@ export default function Home() {
             <div className="flex flex-col gap-5">
               <h1 className="text-2xl">🌐 Front-end</h1>
               <Card>
-                HTML & CSS Base sólida para estruturar e estilizar páginas web.
-                Você domina semântica, boas práticas e consegue criar layouts
+                HTML & CSS para estruturar e estilizar páginas web.
+                Domino semântica, boas práticas e consigo criar layouts
                 responsivos e acessíveis.
               </Card>
               <Card>
-                JavaScript (JS) Linguagem que dá vida às páginas. Você sabe
-                manipular o DOM, trabalhar com eventos e criar interatividade.
+                JavaScript (JS) Linguagem que dá vida às páginas. Sei
+                manipular o DOM, trabalhar com eventos e criar interatividade na página web.
               </Card>
 
               <div className="flex">
@@ -76,22 +76,22 @@ export default function Home() {
                 />
               </div>
               <Card>
-                React Biblioteca moderna para construção de interfaces. Você
-                entende componentes, props, estado e hooks, criando aplicações
+                React Biblioteca moderna para construção de interfaces. Entendo sobre
+                componentes, props, estado e hooks, criando aplicações
                 dinâmicas e escaláveis.
               </Card>
               <Card>
                 TypeScript Tipagem estática que traz segurança e clareza ao
-                código. Você utiliza para evitar erros e melhorar a manutenção
+                código. Utilizando para evitar erros e melhorar a manutenção
                 dos projetos.
               </Card>
               <Card>
                 TailwindCSS Framework utilitário que acelera o desenvolvimento
-                de interfaces modernas e responsivas. Você sabe aplicar classes
+                de interfaces modernas e responsivas. Sei aplicar classes
                 para criar designs consistentes e elegantes.
               </Card>
               <Card>
-                Figma (básico) Ferramenta de design que você usa para prototipar
+                Figma (básico) Ferramenta de design que usada para prototipar
                 interfaces e transformar ideias visuais em projetos práticos.
               </Card>
               <div className="flex">
@@ -122,17 +122,17 @@ export default function Home() {
             <div className="flex flex-col gap-5">
               <h1 className="text-2xl">⚙️ Back-end</h1>
               <Card>
-                Java Linguagem robusta e versátil. Você já tem experiência em
-                projetos básicos e está expandindo para frameworks como Spring
+                Java Linguagem robusta e versátil. Tenho experiência em
+                projetos básicos e estou futuramente expandindo para frameworks como Spring
                 Boot.
               </Card>
               <Card>
                 Spring (futuro aprendizado) Framework poderoso para
-                desenvolvimento de APIs e sistemas empresariais. Você pretende
-                aprofundar-se para criar aplicações escaláveis e seguras.
+                desenvolvimento de APIs e sistemas empresariais. Pretendo
+                aprofundar-me para criar aplicações escaláveis e seguras.
               </Card>
               <Card>
-                MySQL Banco de dados relacional. Você entende conceitos de
+                MySQL Banco de dados relacional. Entendo conceitos de
                 tabelas, consultas SQL e integração com aplicações.
               </Card>
               <div className="flex">
@@ -141,18 +141,6 @@ export default function Home() {
                   altText="Java"
                   captionText="Java"
                 />
-                {/* <TiltedCard
-                  imageSrc="Figma.svg"
-                  altText="Figma"
-                  captionText="Figma"
-                    
-                />
-                <TiltedCard
-                  imageSrc="Figma.svg"
-                  altText="Figma"
-                  captionText="Figma"
-                    
-                /> */}
               </div>
             </div>
           </Container>
@@ -160,8 +148,8 @@ export default function Home() {
             <div className="flex flex-col gap-5">
               <h1 className="text-2xl">🖥️ Outros conhecimentos</h1>
               <Card>
-                C (básico) Linguagem de baixo nível que te deu fundamentos
-                importantes sobre lógica e memória.
+                C (básico) Linguagem de baixo nível que me deu fundamentos
+                importantes sobre lógica de programação.
               </Card>
               <Card>
                 Python (básico) Linguagem versátil, usada em automação, análise
