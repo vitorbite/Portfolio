@@ -25,7 +25,11 @@ export async function POST(request: Request) {
     }
 
     const { nome, email, mensagem } = result.data;
-    const TargetEmail : string = process.env.EMAIL
+    const TargetEmail = process.env.EMAIL;
+    if (!TargetEmail) {
+      throw new Error('Environment variable EMAIL não está configurada');
+    }
+
     // 3. Envia o e-mail usando o Resend
     await resend.emails.send({
       from: 'Portfolio <onboarding@resend.dev>', // No plano grátis do Resend, use este remetente padrão
