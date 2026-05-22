@@ -6,13 +6,17 @@ import Hero from "./components/Hero";
 import Card from "./components/Card";
 import Footer from "./components/Footer";
 import Img from "./imgs/Foto1.png";
-import GatoImg from "./imgs/GatoChad.png";
+import Sobre from "./components/Sobre";
 import ProjetosContainer from "./components/ProjetoContainer";
+import Contato from "./components/Contato/Formulario"
 
 export default function Home() {
   return (
     <Particles>
-      <div className="flex flex-col min-h-screen w-screen items-center justify-center font-sans overflow-x-hidden">
+      <div
+        id="Home"
+        className="flex flex-col min-h-screen w-screen items-center justify-center font-sans overflow-x-hidden"
+      >
         <Menu />
         <main className="flex min-h-screen max-w-11/12 min-w-5xl flex-col items-center justify-between py-16 px-16 bg-tertiary-blue rounded-b-3xl border-2 border-t-0 border-blue-950">
           {/* Inicio */}
@@ -36,21 +40,7 @@ export default function Home() {
           </Container>
           {/* Sobre mim */}
           <Container>
-            <div className="flex flex-row" id="Sobre">
-              <Card>
-                <img src={GatoImg.src} alt="#" className="w-80" />
-              </Card>
-              <div className="mx-30 flex flex-col items-center gap-6 border-l-2 border-amber-50 p-4">
-                <h2>Sobre mim</h2>
-                <p className="p-4">Sou alguém que é apaixonado pela programação, gosto de estudar, criar novas soluções e interfaces de novos projetos. Estou cursando Engenharia de Software e ficando cada dia mais profissional na área da programação.Tenho vontade de estagiar como desenvolvedor.</p>
-                <h3 className="text-xl">Coisas que gosto de fazer</h3>
-                <ul>
-                  <li>Programar</li>
-                  <li>Jogar</li>
-                  <li>Ouvir Música</li>
-                </ul>
-              </div>
-            </div>
+            <Sobre/>
           </Container>
           {/* Tecnologias */}
           <Container>
@@ -66,7 +56,7 @@ export default function Home() {
                 manipular o DOM, trabalhar com eventos e criar interatividade.
               </Card>
 
-              <div className="flex bg-neutral-900">
+              <div className="flex">
                 <TiltedCard
                   imageSrc="html5-original.svg"
                   altText="HTML5"
@@ -180,38 +170,30 @@ export default function Home() {
             </div>
             <div className="flex">
               <TiltedCard
-                  imageSrc="python.svg"
-                  altText="Python"
-                  captionText="Python"
-                />
-                <TiltedCard
-                  imageSrc="c-original.svg"
-                  altText="Linguagem C"
-                  captionText="Linguagem C"
-                />
+                imageSrc="python.svg"
+                altText="Python"
+                captionText="Python"
+              />
+              <TiltedCard
+                imageSrc="c-original.svg"
+                altText="Linguagem C"
+                captionText="Linguagem C"
+              />
             </div>
           </Container>
           {/* Projetos */}
           <Container>
-            <h1 className="text-2xl bg-neutral-900 p-2">Projetos</h1>
-            <div className="w-full">
-              <ProjetosContainer></ProjetosContainer>
+            <div id="Projetos" className="w-full flex flex-col items-center justify-center gap-4">
+              <h1 className="text-2xl bg-neutral-900 p-2">
+                Projetos
+              </h1>
+              <div className="w-full">
+                <ProjetosContainer></ProjetosContainer>
+              </div>
             </div>
           </Container>
           <Container>
-            <h2>Entre em Contato</h2>
-            <form action="send" method="POST" className="flex flex-col">
-              <label htmlFor="nome">nome:</label>
-              <input id="nome" type="text" className="bg-white" />
-              <label htmlFor="email">email:</label>
-              <input
-                type="email"
-                name="emailInput"
-                id="email"
-                className="bg-white"
-              />
-              <button type="submit">Enviar</button>
-            </form>
+            <Contato></Contato>
           </Container>
         </main>
         <Footer />
