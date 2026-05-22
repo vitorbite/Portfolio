@@ -164,7 +164,7 @@ p {
   transition: all 0.3s;
 }
 
-a {
+.Projeto a {
   color: #2669d5;
 }
 @media screen and (max-width: 600px) {
