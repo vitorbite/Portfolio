@@ -18,11 +18,11 @@
     filter: brightness(0.8);
     box-shadow: inset -3px 3px 1px black;
 }
-#Projetos{
+#ProjetosBtn{
     background-color: var(--color-blue-700);
     color: var(--color-neutral-200);
 }
-#Projetos:hover{
+#ProjetosBtn:hover{
     background-color: var(--color-blue-800);
     color: var(--color-neutral-200);
 }
