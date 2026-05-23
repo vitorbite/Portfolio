@@ -2,11 +2,11 @@ import style from "./style.module.css";
 
 export default function index() {
   return (
-    <div className="mt-45">
+    <div className="z-10">
         <ol className="flex flex-row justify-center items-center h-12">
           <li className="p-2">
             <a
-              className="text-shadow-black text-shadow-md hover:text-neutral-400 hover:underline"
+              className="text-shadow-black text-shadow-lg hover:text-neutral-400 hover:underline"
               href="https://github.com/vitorbite"
             >
               GitHub
