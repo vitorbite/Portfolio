@@ -7,5 +7,7 @@ export function Scroll(targetId?: string): void {
     const header = document.querySelector("nav");
     const headerHeight = header instanceof HTMLElement ? header.offsetHeight : 0;
     const y = el.getBoundingClientRect().top + window.pageYOffset - headerHeight - 12;
-    window.scrollTo({ top: y, behavior: "smooth" });
+    setTimeout(() => {
+        window.scrollTo({ top: y, behavior: "smooth" });
+    }, 100);
 }

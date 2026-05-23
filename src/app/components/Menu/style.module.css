@@ -1,28 +1,77 @@
-.button{
-    padding: 0.4rem 2rem;
-    max-width: 40vw;
-    border: 1px solid var(--color-neutral-900);
-    background-color: var(--color-neutral-200);
-    color: var(--color-stone-950);
-    border-radius: 7px;
-    height: 70%;
-    box-shadow: -3px 3px 0px black;
-    transition: all 0.2s;
+.button {
+  padding: 0.4rem 2rem;
+  max-width: 40vw;
+  border: 1px solid var(--color-neutral-900);
+  background-color: var(--color-neutral-200);
+  color: var(--color-stone-950);
+  border-radius: 7px;
+  height: 70%;
+  box-shadow: -3px 3px 0px black;
+  transition: all 0.2s;
 }
-.button:hover{
-    background-color: var(--color-neutral-900);
-    color: var(--color-neutral-200);
-    transition: 0.3s;
+.button:hover {
+  background-color: var(--color-neutral-900);
+  color: var(--color-neutral-200);
+  transition: 0.3s;
 }
-.button:active{
-    filter: brightness(0.8);
-    box-shadow: inset -3px 3px 1px black;
+.button:active {
+  filter: brightness(0.8);
+  box-shadow: inset -3px 3px 1px black;
 }
-#ProjetosBtn{
-    background-color: var(--color-blue-700);
-    color: var(--color-neutral-200);
+.MenuHamburger {
+  padding: 8px;  
+  border: 1px solid var(--color-neutral-900);
+  background-color: var(--color-blue-700);  
+  border-radius: 7px;
+  height: 70%;
+  box-shadow: -3px 3px 0px black;
+  transition: all 0.2s;
 }
-#ProjetosBtn:hover{
-    background-color: var(--color-blue-800);
-    color: var(--color-neutral-200);
+.MenuHamburger:hover{
+  background-color: var(--color-blue-800);
+  color: var(--color-neutral-200);
+  transition: 0.3s;
+}
+.MenuHamburger:active{
+  filter: brightness(0.8);
+  box-shadow: inset -3px 3px 1px black;
+}
+#ProjetosBtn {
+  background-color: var(--color-blue-700);
+  color: var(--color-neutral-200);
+}
+#ProjetosBtn:hover {
+  background-color: var(--color-blue-800);
+}
+.MenuBtns{
+  position: absolute;
+  top: 3.5rem;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: rgba(17, 40, 123, 0.9);
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 300ms ease, transform 300ms ease;
+  pointer-events: none;
+  visibility: hidden;
+}
+.MenuBtns.open{
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+  visibility: visible;
+}
+.MenuBtns.closed{
+  opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: none;
+  visibility: hidden;
+}
+.MenuBtns button{
+  border-bottom: 2px solid #ddd;
+  width: 100vw;
+  height: 4rem;
 }

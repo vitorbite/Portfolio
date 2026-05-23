@@ -53,7 +53,7 @@ export default function ContatoPage() {
   };
 
   return (
-    <>
+    <div id='Contato'>
       <h1 className="text-2xl font-bold mb-6">Contate-me</h1>
 
       <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-4">
@@ -110,6 +110,6 @@ export default function ContatoPage() {
           <p className="text-red-400 text-sm mt-2 text-center">Ocorreu um erro ao enviar. Tente novamente.</p>
        )}
       </form>       
-      </>
+      </div>
   );
 }
