@@ -10,7 +10,7 @@ export default function index() {
   return (
     <nav className="fixed top-0 z-10">
       <div className="max:w-20 w-screen h-15 border-b-amber-50 border-b bg-blue-950 flex sm:justify-evenly justify-between items-center px-10">
-        <h2>Vitorbite</h2>
+        <h2 className="cursor-pointer hover:brightness-50 font-bold text-indigo-200 transition-all"><a href="#Home">Vitorbite</a></h2>
         <div className="justify-between max-w-1/2 w-2xl items-center hidden sm:flex">
           <button className={styles.button} onClick={() => Scroll("Home")}>
             Home
