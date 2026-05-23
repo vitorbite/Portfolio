@@ -4,6 +4,7 @@ import Particles from "./components/Particles";
 import TiltedCard from "./components/TiltedCard";
 import Container from "./components/Container";
 import Menu from "./components/Menu";
+import FishSpawner from "./components/FishSpawner";
 import Hero from "./components/Hero";
 import Card from "./components/Card";
 import Footer from "./components/Footer";
@@ -16,24 +17,25 @@ import { Scroll } from "./components/Menu/scroll";
 export default function Home() {
   return (
     <Particles>
+        <FishSpawner />
       <div
         id="Home"
         className="flex flex-col min-h-screen w-screen items-center justify-center font-sans overflow-x-hidden"
       >
         <Menu />
-        <main className="flex min-h-screen max-w-11/12 min-w-5xl flex-col items-center justify-between py-16 px-16 bg-tertiary-blue rounded-b-3xl border-2 border-t-0 border-blue-950">
+        <main className="flex min-h-screen max-w-11/12 min-w-5xl flex-col items-center justify-between py-16 px-16 bg-tertiary-blue rounded-b-3xl border-2 border-t-0 border-blue-950 overflow-x-hidden">
           {/* Inicio */}
           <Container>
             <div className="flex flex-row justify-center">
               <div className="flex flex-col max-w-3xl sm:w-55 md:w-md justify-center">
                 <span className="max-w-xs text-xl">Olá, me chamo</span>
-                <h1 className="max-w-xs text-2xl font-semibold leading-10 text-blue-700 text-shadow-black text-shadow-md ">
+                <h1 className="max-w-xs text-2xl font-semibold leading-10 text-yellow-400 text-shadow-black text-shadow-md ">
                   Vítor Bitencourt de Andrade
                 </h1>
                 <h2 className="max-w-md text-2xl leading-8 font-extrabold text-shadow-black text-shadow-md">
                   <Hero></Hero>
                 </h2>
-              <button className="bg-blue-600 sm:mt-5 sm:w-sm mt-4 sm:max-w-50 rounded-xl py-3 shadow-md shadow-gray-900 active:bg-blue-700" onClick={() => Scroll("Contato")}>Contate-me</button>
+              <button className="bg-blue-600 sm:mt-5 sm:w-sm mt-4 sm:max-w-50 rounded-xl py-3 shadow-md shadow-gray-900 active:bg-blue-800 active:shadow-inner hover:bg-blue-700" onClick={() => Scroll("Contato")}>Contate-me</button>
               </div>
               <img
                 className="size-31 drop-shadow-lg drop-shadow-neutral-900 sm:size-31 md:size-56 border-l-2"

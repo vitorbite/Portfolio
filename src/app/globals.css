@@ -169,6 +169,39 @@ p {
 .Projeto a {
   color: #2669d5;
 }
+.Peixe {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  animation:
+    nadar 15s linear forwards,
+    nadar2 15s linear forwards 15s,
+    nadar3 15s linear forwards 30s;
+}
+@keyframes nadar {
+  from {
+    transform: translate(0, 0) rotateZ(-90deg);
+  }
+  to {
+    transform: translate(0, 290rem) rotateZ(-90deg);
+  }
+}
+@keyframes nadar2 {
+  from {
+    transform: translate(0, 290rem) rotateY(-180deg);
+  }
+  to {
+    transform: translate(91vw, 290rem) rotateY(-180deg);
+  }
+}
+@keyframes nadar3 {
+  from {
+    transform: translate(91vw, 290rem) rotateZ(90deg) rotateX(180deg);
+  }
+  to {
+    transform: translate(91vw, -30rem) rotateZ(90deg) rotateX(180deg);
+  }
+}
 @media screen and (max-width: 600px) {
   .Projeto {
     width: 100%;
@@ -176,6 +209,9 @@ p {
   p {
     width: 75vw;
     border: none;
+  }
+  .Peixe{
+    display: none;
   }
 }
 input {
